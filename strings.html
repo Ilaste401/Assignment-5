@@ -1,0 +1,51 @@
+<!--Charli Romano-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="strings.js"></script>
+    <link rel="stylesheet" href="strings.css">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <header><h1>Palindrome Checker</h1></header>
+    <nav>
+        <h2>
+            <a href="./index.html">Home</a>
+            <a href="./boards.html">Boards</a>
+            <a href="./game.html">Game</a>
+            <a href="./Tables.html">Tables</a>
+        </h2>
+    </nav>
+    <br>
+    <p id = "verification">Please verify before utilizing this program.</p>
+    <br>
+    <form id="credSubmit" onsubmit = "return false">
+        First Name:     <input type="text" id="firstName"/>
+        Last Name:      <input type="text" id="lastName"/>
+        <br>
+        Zip Code        <input type="number" id="zipCode"/><br>
+        <input type="submit" onclick="checkInput()">
+    </form>
+    <form id = "palindrome" onsubmit = "return false">
+        <br>
+        Input potential palindrome: <input type="text" id="palindromeChecker"/>
+        <input type="submit" onclick="strings()"/>
+        <p id="palindromeResult">Results of input.</p>
+    </form>
+    <h3>Background noise, for your leisure.</h1>
+        <button onclick="playMusic();">Push me to play music.</button>
+        <button onclick="stopMusic();">Push me to stop the music.</button>
+        <br>
+        <img src="1x1.png" id="image">
+</body>
+<footer>
+    <hr>
+    Charles Romano<br>
+    University of Advancing Technology<br>
+    2625 W Baseline Rd<br>
+    Tempe, AZ, 85283<br>
+    <a href="https://www.uat.edu/">UAT Website</a>
+</footer>
+</html>
